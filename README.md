@@ -1,43 +1,48 @@
-# glowtrail
+# fireplace
 
-A minimal terminal animation written in **C**: a smooth moving **glow trail** (comet-like) rendered with ANSI truecolor.
+A minimal **terminal fireplace** written in **C** — smooth flame simulation rendered with ANSI truecolor.
 
-Designed to be lightweight, clean, and visually pleasing in any modern terminal.
-
----
-
-## Preview
-
-Run it in a fullscreen terminal for the best look.
+Designed as a clean background animation for a terminal window.
 
 ---
 
 ## Features
 
-- Smooth trail effect (fade buffer)
-- ANSI **24-bit color** (truecolor)
+- Smooth flame diffusion (heat buffer)
+- ANSI 24-bit color (truecolor)
 - No external dependencies
 - Handles terminal resize
-- Clean redraw (no leftover characters)
-- Works great as a background terminal “vibe” animation
+- Runs in an alternate screen buffer (no terminal trash)
 
 ---
 
 ## Build
 
-### Linux / macOS
+### macOS / Linux
 
 ```bash
-cc -O2 glowtrail.c -o glowtrail -lm
+cc -O2 fireplace.c -o fireplace
 ```
 
-## Run 
+---
+
+## Run
+
 ```bash
-./glowtrail
+./fireplace
 ```
-Exit with: 
-`Ctrl + C`
+
+Exit with:
+
+```text
+Ctrl + C
+```
+
+---
 
 ## Notes
-- Best viewed in a terminal that supports truecolor.
-- If your terminal looks “blocky”, try increasing font size or running in a larger window.
+
+- Best viewed in a modern terminal with truecolor support.
+- For the smoothest look, use a larger terminal window.
+
+---
